@@ -10,7 +10,7 @@ vision_client = vision.Client()
 # The name of the image file to annotate
 file_name = os.path.join(
     os.path.dirname(__file__),
-    'resources/cheeseburger.jpg')
+    'resources/apple.jpg')
 
 # Loads the image into memory
 with io.open(file_name, 'rb') as image_file:
@@ -36,3 +36,4 @@ for entity in web_images.web_entities:
 		r_1 = requests.get('https://www.nutritics.com/api/v1.1/DETAIL/&food='+str(food_id)+'quantity=serving', auth=('bturcott', 'Mustang1'))
 		meta_data = r_1.json()
 		print 'Calories: ' + str(meta_data['energyKcal']['val'])
+		#print meta_data 

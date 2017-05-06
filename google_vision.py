@@ -10,7 +10,7 @@ vision_client = vision.Client()
 # The name of the image file to annotate
 file_name = os.path.join(
     os.path.dirname(__file__),
-    'resources/apple.jpg')
+    'resources/pizza_coke.jpg')
 
 # Loads the image into memory
 with io.open(file_name, 'rb') as image_file:
