@@ -67,13 +67,7 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 		return lifetimeActivity;
 	}
 	
-	/*@RequestMapping("/testSleep")
-	public Sleep2 checkRest()
-	{	
-		Sleep2 sl = new Sleep2();
-		return sl;
-		
-	}*/
+	
 	
 	@RequestMapping("/Date-Range-Sleep")
 	public DailySleep dateRangeSleep(){
@@ -110,9 +104,7 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 			Sleep s = fitbitOAuthRestTemplate.getForObject(fitbitDailySleepUri, Sleep.class);
 			dailySleep = s.getSummary();
 			
-			/*String sl  = s.getSleep();
 			
-			System.out.println(sl);*/
 			
 			}
 		catch(Exception e) {
@@ -136,8 +128,6 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 			cal.add(Calendar.DATE, -2);
 			
 			SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
-//			https://api.fitbit.com/1.2/user/-/sleep/date/2017-05-02.json
-//			https://api.fitbit.com/1.2/user/-/sleep/date/2017-05-03.json
 			
 			Date utilDate = cal.getTime();
 			Date sqlStartDate = new Date(utilDate.getTime());
@@ -150,7 +140,6 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 			Sleep s = fitbitOAuthRestTemplate.getForObject(formatted, Sleep.class);
 			dailySleep = s.getSummary();
 			Activity a = fitbitOAuthRestTemplate.getForObject(fitbitDailySummaryUri, Activity.class);
-//			lifetimeActivity = a.getLifetime().getTotal();
 			DailyActivities dailyActivities= a.getSummary();
 			dailyDataActivity.setDate(reqDate);
 			dailyDataActivity.setCaloriesOut(dailyActivities.getCaloriesOut());
@@ -183,11 +172,6 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 		    	connection = DriverManager.
 		                getConnection(JDBC_MYSQL + PUBLIC_DNS + ":" + PORT + "/" + DATABASE_NAME,REMOTE_DATABASE_USERNAME,DATABASE_USER_PASSWORD);
 		    	Statement statement=connection.createStatement();
-		    	//DateFormat formatter= new SimpleDateFormat("yyyy-mm-dd");
-		    	//Date convertedDate=(Date)formatter.parse(ActivityDate);
-		    	
-		    	//Date ActivityDateConv=new SimpleDateFormat("yyyy-mm-dd").parse(ActivityDate);
-		    	//System.out.println(ActivityDateConv);
 		    	String InsertQuery="INSERT INTO DailyUserActivity(`UserId`,`CalorieIntake`,`CalorieBurnt`,`Date`,`SleepHours`)VALUES("+UserID+","+CalorieIntake+","+CalorieBurnt+","+sqlStartDate+","+SleepHours+");";
 		    	statement.executeUpdate(InsertQuery);	    
 		    } catch (SQLException e) {
