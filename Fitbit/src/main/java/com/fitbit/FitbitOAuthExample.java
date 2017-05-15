@@ -7,7 +7,7 @@ import com.fitbit.model.DailyDataActivity;
 import com.fitbit.model.DailySleep;
 import com.fitbit.model.LifetimeActivity;
 import com.fitbit.model.Sleep;
-//import com.fitbit.model.Sleep2;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
