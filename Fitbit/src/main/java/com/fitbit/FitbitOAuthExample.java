@@ -69,7 +69,7 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 	
 	
 	
-	@RequestMapping("/Date-Range-Sleep")
+	@RequestMapping("/date-range-sleep")
 	public DailySleep dateRangeSleep(){
 		DailySleep dateRangeSleep;
 		try {
@@ -84,7 +84,7 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 		return dateRangeSleep;
 	}
 	
-	@RequestMapping("/Daily-Summary")
+	@RequestMapping("/daily-summary")
 	public DailyActivities dailyActivities(){
 		DailyActivities dailyActivities;
 		try {
@@ -97,7 +97,7 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 		return dailyActivities;
 	}
 	
-	@RequestMapping("/Daily-Sleep")
+	@RequestMapping("/daily-sleep")
 	public DailySleep dailySleep(){
 		DailySleep dailySleep;
 		try {
@@ -115,7 +115,7 @@ public class FitbitOAuthExample extends WebSecurityConfigurerAdapter {
 		return dailySleep;
 	}
 	
-	@RequestMapping("/dailyData")
+	@RequestMapping("/daily-data")
 	public DailyDataActivity dailyData(){
 		DailySleep dailySleep;
 //		LifetimeActivity lifetimeActivity;
