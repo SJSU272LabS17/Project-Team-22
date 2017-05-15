@@ -15,7 +15,7 @@ public class DbToCsvConversion
 {
 public static void main(String args[])
 {	
-	System.out.println("----MySQL JDBC Connection Testing -------");
+	
     String JDBC_MYSQL="jdbc:mysql://";
     String PUBLIC_DNS="athar.cj4c4eeohacg.us-west-1.rds.amazonaws.com";
     String PORT="3306";
