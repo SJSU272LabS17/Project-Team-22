@@ -1,1 +1,1 @@
-This modules runs on Jupyter Notebook.
+This module runs on Jupyter Notebook.
