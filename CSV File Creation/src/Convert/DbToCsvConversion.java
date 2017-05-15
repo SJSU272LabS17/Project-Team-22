@@ -52,7 +52,9 @@ public static void main(String args[])
             fileWriter.close();
             connection.close();
             System.out.println("CSV File is created successfully.");
-        } catch (Exception e) {
+        } 
+	catch (Exception e) 
+	{
             e.printStackTrace();
         }
     }
