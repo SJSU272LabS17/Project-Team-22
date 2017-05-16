@@ -14,4 +14,6 @@ Using Natural Language Processing and Machine learning to classify the claim or 
 
 Link to the notebook
 
-http://4d903e82.ngrok.io/?token=183a1ecdea533c72d581bd07d4e58cdd48f4d8d1b06a06f0
+http://4e5f2454.ngrok.io/notebooks/weigth-loss.ipynb
+
+If asked for token : 0b17cf4b2eb0cc7470ed6a2adf0b19d379f7c81e79e9052b
