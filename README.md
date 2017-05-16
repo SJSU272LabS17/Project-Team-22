@@ -1,4 +1,4 @@
-# Project-Team-22
+# Project-Team-22 - Approved
 Abstract 1– ML Enabled Food Journal
 
 In today's world, people are very health conscious and they want to remain fit. One of the main aspects of improving health is maintaining weight which is closely related to total calorie intake and burned by an individual.This problem offers a need for a tool for individuals to evaluate their daily calorie surplus or deficit.
