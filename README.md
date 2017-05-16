@@ -14,6 +14,6 @@ Using Natural Language Processing and Machine learning to classify the claim or 
 
 Link to the notebook
 
-http://4e5f2454.ngrok.io/notebooks/weigth-loss.ipynb
+http://ec2-52-32-59-130.us-west-2.compute.amazonaws.com:8888/notebooks/weigth-loss.ipynb
 
-If asked for token : 0b17cf4b2eb0cc7470ed6a2adf0b19d379f7c81e79e9052b
+password : 1234
